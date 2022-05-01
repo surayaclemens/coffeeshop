@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+li {
+  font-size: 1.31rem;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2.06rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.13rem;
+}
+
+.headerbar {
+  background-color: #FFF0ED;
+  margin: 0;
+  /* padding-bottom: 1.5%; */
+  width: 100%;
+  height: 100px;
+  /* padding: 1% 0 0 2%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  /* vertical-align: bottom; */
+}
+
+.headerbar__logo {
+  padding: 1% 0 0 1%;
+}
+
+.headerbar__logo-icon {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  padding: 0 0 7% 0;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.headerbar__logo-wordmark {
+  font-size: 3.1rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: #353535;
+}
+
+.headerbar__nav {
+  margin: 0;
+  padding: 0%;
+  width: 25rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headerbar__links--reg {
+  margin: 0 0 20px 0;
+  padding-left: 1%;
+  padding-right: 1.5%;
+  display: inline;
+  color: #353535;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  list-style-type: none;
+}
+
+.headerbar__links--action {
+  color: #5bacc3;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  list-style-type: none;
+}
+
+a {
+  padding: 0% 0%;
+  margin: 0% 0%;
+  text-decoration: none;
+}
+
+.headerbar__links--reg:visited {
+  color: rgb(53, 53, 53);
+}
+
+.headerbar__links--action:visited {
+  color: #5bacc3;
+}
+
+/* styles from before adding flexbox */
+/* .headerbar {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 1% 0 0 2%;
+    display: inline-block;
+    vertical-align: bottom;
+
+}
+
+.headerbar__logo-icon {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0 0 7% 0;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.headerbar__logo-wordmark {
+    font-size: 3.1rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: #353535;
+
+}
+
+.headerbar__nav {
+    margin: 0 0 20px 0;
+    height: 300px;
+    padding-left: 1%;
+    display: inline;
+}
+
+.headerbar__links {
+    margin: 0 0 20px 0;
+    padding-left: 1%;
+    padding-right: 1.5%;
+    display: inline;
+    color: #353535;
+}
+
+#headerbar__links--action {
+    color: #5bacc3;
+
+}
+
+a {
+    padding: 0% 0%;
+    margin: 0% 0%;
+    text-decoration: none;
+}
+
+li a:visited {
+    color: rgb(53, 53, 53);
+} */
+body {
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+}
+
+#banner__image {
+  background-image: url(../assets/images/coffee-circle.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+
+.banner__menubox {
+  width: 20%;
+  height: 35%;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.75rem;
+  display: inline-block;
+  margin-left: 40%;
+}
+
+.banner__menutitle {
+  margin-top: 0%;
+}
+
+.subnavbar {
+  width: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+  display: block;
+}
+
+.subnavbar > ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.31rem;
+  margin: 0% 0% 0% 0%;
+}
+
+.subnavbar li {
+  border-left: 4px solid #5bacc3;
+  display: inline-block;
+  margin: 20px 0px 20px 20px;
+  max-height: 80px;
+  padding-left: 20px;
+  text-align: center;
+  padding-right: 0%;
+}
+
+.subnavbar a:visited {
+  color: white;
+}
+
+.menu__category {
+  margin-top: 0%;
+  padding-top: 20px;
+}
+
+#hotdrinks {
+  background-color: #FFF0ED;
+  color: rgb(53, 53, 53);
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 20px;
+}
+
+#colddrinks {
+  background-color: #F7F7F7;
+  color: rgb(53, 53, 53);
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 20px;
+}
+
+#pastries {
+  background-color: #FFF0ED;
+  color: rgb(53, 53, 53);
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 20px;
+}
+
+.menu__item {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.menu__description {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.13rem;
+  font-weight: 400;
+  color: rgb(53, 53, 53);
+  max-width: 33%;
+  display: inline-block;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-top: 0%;
+}
+
+.menu__price {
+  color: #5bacc3;
+  font-size: 1.13rem;
+  margin-top: 0%;
+}/*# sourceMappingURL=menu.css.map */

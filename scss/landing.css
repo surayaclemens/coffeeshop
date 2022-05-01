@@ -1,0 +1,592 @@
+* {
+  box-sizing: border-box;
+}
+
+li {
+  font-size: 1.31rem;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2.06rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.13rem;
+}
+
+.headerbar {
+  background-color: #FFF0ED;
+  margin: 0;
+  /* padding-bottom: 1.5%; */
+  width: 100%;
+  height: 100px;
+  /* padding: 1% 0 0 2%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  /* vertical-align: bottom; */
+}
+
+.headerbar__logo {
+  padding: 1% 0 0 1%;
+}
+
+.headerbar__logo-icon {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  padding: 0 0 7% 0;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.headerbar__logo-wordmark {
+  font-size: 3.1rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: #353535;
+}
+
+.headerbar__nav {
+  margin: 0;
+  padding: 0%;
+  width: 25rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headerbar__links--reg {
+  margin: 0 0 20px 0;
+  padding-left: 1%;
+  padding-right: 1.5%;
+  display: inline;
+  color: #353535;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  list-style-type: none;
+}
+
+.headerbar__links--action {
+  color: #5bacc3;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  list-style-type: none;
+}
+
+a {
+  padding: 0% 0%;
+  margin: 0% 0%;
+  text-decoration: none;
+}
+
+.headerbar__links--reg:visited {
+  color: rgb(53, 53, 53);
+}
+
+.headerbar__links--action:visited {
+  color: #5bacc3;
+}
+
+/* styles from before adding flexbox */
+/* .headerbar {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 1% 0 0 2%;
+    display: inline-block;
+    vertical-align: bottom;
+
+}
+
+.headerbar__logo-icon {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0 0 7% 0;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.headerbar__logo-wordmark {
+    font-size: 3.1rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: #353535;
+
+}
+
+.headerbar__nav {
+    margin: 0 0 20px 0;
+    height: 300px;
+    padding-left: 1%;
+    display: inline;
+}
+
+.headerbar__links {
+    margin: 0 0 20px 0;
+    padding-left: 1%;
+    padding-right: 1.5%;
+    display: inline;
+    color: #353535;
+}
+
+#headerbar__links--action {
+    color: #5bacc3;
+
+}
+
+a {
+    padding: 0% 0%;
+    margin: 0% 0%;
+    text-decoration: none;
+}
+
+li a:visited {
+    color: rgb(53, 53, 53);
+} */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #FFF0ED;
+  padding-bottom: 5%;
+}
+
+.banner {
+  background-color: #FFF0ED;
+}
+
+.banner__text {
+  display: inline-block;
+  color: #353535;
+  box-sizing: border-box;
+  margin-left: 9%;
+  padding-top: 7%;
+  vertical-align: top;
+  width: 40%;
+}
+
+.banner__title {
+  margin-bottom: 0%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.banner__tagline {
+  display: block;
+  width: 60%;
+  margin-right: 0%;
+}
+
+.banner__image {
+  height: 550px;
+  padding-left: 15%;
+  padding-right: 12%;
+  padding-bottom: 3%;
+  display: inline-block;
+}
+
+.actionbutton__shop {
+  background-color: #5bacc3;
+  color: white;
+  margin-top: 8%;
+  padding: 2%;
+  font-size: 1.31rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  width: 160px;
+  text-align: center;
+}
+
+/* PRODUCT CARD SECTION */
+.products {
+  height: 80%;
+  display: flex;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products__header {
+  margin-left: 0%;
+  display: block;
+  color: #353535;
+}
+
+.products__gallery {
+  display: flex;
+  width: 100%;
+  padding: 0 5% 0 5%;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+
+.productcard {
+  min-width: 330px;
+  max-width: 350px;
+  min-height: 440px;
+  max-height: 460px;
+  border-radius: 10px;
+  padding: 20px 0 0 0;
+  margin: 0% 3% 1% 3%;
+  background-color: white;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  vertical-align: middle;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productcard__img {
+  width: 40%;
+  margin-left: 0%;
+  margin-top: 5%;
+  height: 240px;
+}
+
+/* this is the pink background */
+.productcard__info {
+  margin: 10% 0% 0 0;
+  padding: 10% 0% 10% 0%;
+  width: 100%;
+  height: 33%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #FFF0ED;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* this is the product name and quantity block*/
+.productcard__info--left {
+  align-self: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.productcard__item {
+  font-weight: 300;
+  color: #353535;
+  margin: 0%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.productcard__quantity {
+  color: #909090;
+  margin: 0%;
+  margin-right: 0%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+/* this is the price */
+.productcard__info--right {
+  align-self: center;
+  height: 100%;
+  padding-top: 5%;
+  padding-right: 5%;
+}
+
+.productcard__price {
+  font-weight: 700;
+  color: #5bacc3;
+  margin: 0%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.actionbutton__view {
+  background-color: #5bacc3;
+  color: white;
+  margin: 4% 0% 4% 0%;
+  padding: 1%;
+  font-size: 1.31rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  width: 180px;
+  text-align: center;
+}
+
+/* WE'RE DIFFERENT SECTION */
+.different {
+  /* border: 2px solid red; */
+  height: 80vh;
+  padding-top: 8%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.different__info-container {
+  /* border: 2px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 32%;
+  height: 80%;
+  margin-top: 2%;
+  position: relative;
+}
+
+.different__text {
+  /* border: 2px solid yellow; */
+  margin: 0;
+  padding: 0%;
+}
+
+.different__icons-container {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.different__icon {
+  height: 50px;
+  width: 50px;
+}
+
+.different__button-link {
+  background-color: none;
+  border: 2px solid #353535;
+  color: white;
+  padding: 3% 4%;
+  font-size: 1.31rem;
+  font-weight: 400;
+  text-decoration: none;
+  width: 180px;
+  height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+}
+
+.different__button-back {
+  background-color: #5bacc3;
+  z-index: 0;
+  position: relative;
+  width: 180px;
+  height: 58px;
+  top: 5px;
+  left: 5px;
+}
+
+/* TILTED CAN W/ BACKGROUND */
+.different__graphic-container {
+  /* border: 2px solid lime; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 45%;
+  position: relative;
+}
+
+.different__graphic--back {
+  /* border: 4px solid yellow; */
+  background-image: url(../assets/images/coldbrewbackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  z-index: 0;
+  right: 8%;
+}
+
+/* can't get image to shrink with containers */
+.different__graphic--main {
+  /* border: 2px solid green; */
+  background-image: url(../assets/images/tiltedcan.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 6%;
+  left: 27%;
+  z-index: 2;
+}
+
+.different__graphic--border {
+  border: 5px solid #5bacc3;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  top: 6%;
+  left: 27%;
+  z-index: 1;
+  margin: 0%;
+}
+
+/* DISCOUNT BANNER */
+.discount-container {
+  background-color: white;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid blue; */
+}
+
+.discount-container__text {
+  margin: 0;
+  font-size: 2.81rem;
+  vertical-align: middle;
+  background-color: #393939;
+  color: white;
+  font-size: 2.81rem;
+  font-weight: 400;
+  width: 85%;
+  padding: 3%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* FOOTER STYLES */
+.footer {
+  background-color: #FFF0ED;
+  height: 35vh;
+  width: 100%;
+  margin-left: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
+
+/* 3 BOXES - ADDRESS HOURS SOCIAL */
+.footerbox-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* border: 3px solid skyblue; */
+}
+
+.footerbox {
+  background-color: #FFF0ED;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  color: #353535;
+  /* border: 2px solid orange; */
+}
+
+/* .footerbox--social {
+    flex-direction: column;
+} */
+/* .footerbox--leftmost {
+    background-color: #FFF0ED;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin-right: 0%;
+    margin-left: 13%;
+    padding-left: 0%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    vertical-align: middle;
+} */
+.footerbox__heading {
+  font-weight: 300;
+  margin: 0%;
+  padding-bottom: 20px;
+  display: block;
+  max-width: 50%;
+  /* border: 2px solid green; */
+}
+
+.footerbox__info {
+  display: block;
+  margin: 0%;
+  font-style: normal;
+  /* border: 2px solid blue; */
+}
+
+.footerbox__icon-box {
+  display: flex;
+  justify-content: space-between;
+  /* border: 4px solid red; */
+  width: 60%;
+}
+
+.footerbox__icon {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  /* border: 2px solid pink; */
+}
+
+.footerbox__link {
+  margin-right: 5%;
+}
+
+/* FADED COFFEE BEANS */
+.footer__logo {
+  opacity: 25%;
+  /* border: 2px solid magenta; */
+  height: 100%;
+}
+
+.footer__logo-container--upper {
+  /* border: 2px solid teal; */
+  height: 50%;
+  position: relative;
+  top: -20%;
+  left: -3%;
+}
+
+.footer__logo-container--lower {
+  /* border: 2px solid teal; */
+  height: 50%;
+  position: relative;
+  top: 20%;
+  left: 3%;
+}
+
+address {
+  font-size: 1.13rem;
+}/*# sourceMappingURL=landing.css.map */
